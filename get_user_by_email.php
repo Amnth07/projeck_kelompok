@@ -13,7 +13,6 @@ if ($_SERVER['REQUEST_METHOD'] === 'GET') {
 
   echo json_encode($user);
 } else {
-  // Beri respons JSON untuk metode permintaan yang tidak diizinkan
   echo json_encode(['error' => 'Metode permintaan tidak diizinkan']);
 }
 ?>
