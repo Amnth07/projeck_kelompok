@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:form/home/berhasil.dart';
-import 'package:form/home/berhasil.dart';
+import 'package:tugas_kelompok/home/menu.dart';
 
 class RegisterForm extends StatefulWidget {
   @override
@@ -62,7 +61,7 @@ class _RegisterFormState extends State<RegisterForm> {
               ElevatedButton(
                 onPressed: () {
                   // Panggil fungsi untuk memproses data register
-                  _register();
+                  _register(context);
                 },
                 child: Text('Register'),
               ),
@@ -73,7 +72,7 @@ class _RegisterFormState extends State<RegisterForm> {
     );
   }
 
-  void _register() {
+  void _register(BuildContext context) {
     String name = _nameController.text;
     String address = _addressController.text;
     String phoneNumber = _phoneNumberController.text;
@@ -101,12 +100,10 @@ class _RegisterFormState extends State<RegisterForm> {
     }
 
     // Lakukan pemrosesan register sesuai kebutuhan, misalnya mengirim data ke server
-    // Setelah berhasil register, pindah ke halaman selanjutnya dengan status berhasil
+    // Setelah berhasil register, pindah ke halaman menu
     Navigator.pushReplacement(
       context,
-      MaterialPageRoute(
-          builder: (context) => UserProfilePage(
-              name: name, address: address, phoneNumber: phoneNumber)),
+      MaterialPageRoute(builder: (context) => MenuPage()),
     );
   }
 }
