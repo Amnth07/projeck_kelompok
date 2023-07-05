@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:form/database_helper/login_page.dart';
-import 'package:form/database_helper/register.dart';
-import 'package:form/database_helper/register.dart';
-import 'package:form/home/menu.dart';
+import 'package:tugas_kelompok/database_helper/login_page.dart';
+import 'package:tugas_kelompok/database_helper/register.dart';
+import 'package:tugas_kelompok/database_helper/register.dart';
+import 'package:tugas_kelompok/home/menu.dart';
 
 void main() {
   runApp(MyApp());

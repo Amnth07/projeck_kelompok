@@ -16,12 +16,12 @@ class _LoginFormState extends State<LoginForm> {
         title: Row(
           children: [
             Image.asset(
-              'assets/images/kmra.jpg', // Ganti dengan path gambar logo Anda
+              'assets/images/angkringan__kami.png', // Ganti dengan path gambar logo Anda
               width: 32,
               height: 32,
             ),
             SizedBox(width: 8.0),
-            Text('sewa kamera'),
+            Text('angkringan__kami'),
           ],
         ),
       ),
